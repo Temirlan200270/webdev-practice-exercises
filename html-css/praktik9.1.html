@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Практика 9</title>
+    </head>
+
+    <body>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="flex: 1;">Практика 9 по Веб технологиям.</h1>
+            <h2 style="flex: 1; text-align: right;"><a href="index.html">На главную страницу</a></h2>
+    </div>
+
+    <div>
+        <h2>Задача #1</h2>
+        <h3>
+            С помощью цикла сформируйте строку, заполненную 5-тью дефисами.
+        </h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var result1 = ''; <br>
+            for (var i = 0; i < 5; i++) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result1 += '-'; <br>
+            } <br>
+            alert("result1); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var result1 = '';
+            for (var i = 0; i < 5; i++) {
+                result1 += '-';
+            }
+            alert("Задача #1: " + result1);
+        </script>
+    </div>
+    
+    <div>
+        <h2>Задача #2</h2>
+        <h3>
+            С помощью цикла сформируйте строку '123456789'.
+        </h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var result2 = ''; <br>
+            for (var i = 1; i <= 9; i++) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result2 += i; <br>
+            } <br>
+            alert("result2); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var result2 = '';
+            for (var i = 1; i <= 9; i++) {
+                result2 += i;
+            }
+            alert("Задача #2: " + result2);
+        </script>
+    </div>
+    
+    <div>
+        <h2>Задача #3</h2>
+        <h3>
+            С помощью цикла сформируйте строку '987654321'.
+        </h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var result3 = ''; <br>
+            for (var i = 9; i >= 1; i--) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result3 += i; <br>
+            } <br>
+            alert("result3); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var result3 = '';
+            for (var i = 9; i >= 1; i--) {
+                result3 += i;
+            }
+            alert("Задача #3: " + result3);
+        </script>
+    </div>
+    
+    <div>
+        <h2>Задача #4</h2>
+        <h3>
+            С помощью цикла сформируйте строку '-1-2-3-4-5-6-7-8-9-'.
+        </h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var result4 = '-'; <br>
+            for (var i = 1; i <= 9; i++) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result4 += i + '-'; <br>
+            } <br>
+            alert("result4); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var result4 = '-';
+            for (var i = 1; i <= 9; i++) {
+                result4 += i + '-';
+            }
+            alert("Задача #4: " + result4);
+        </script>
+    </div>
+</body>
+</html>

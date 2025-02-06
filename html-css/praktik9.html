@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Практика 9</title>
+    </head>
+
+    <body>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="flex: 1;">Практика 9 по Веб технологиям.</h1>
+            <h2 style="flex: 1; text-align: right;"><a href="index.html">На главную страницу</a></h2>
+    </div>
+
+    <div>
+        <h2>Задача #1</h2>
+        <h3>С помощью метода splice преобразуйте массив в следующий:
+            <br>
+            [1, 4, 5]</h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var arr1 = [1, 2, 3, 4, 5]; <br>
+            arr1.splice(1, 2); <br>
+            alert("arr1); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var arr1 = [1, 2, 3, 4, 5];
+            arr1.splice(1, 2);
+            alert("Задача #1: " + arr1);
+        </script>
+    </div>
+    
+    <div>
+        <h2>Задача #2</h2>
+        <h3>
+            С помощью метода splice сделайте из него массив:
+            <br>
+            [1, 2, 3, 'a', 'b', 'c', 4, 5]
+        </h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var arr2 = [1, 2, 3, 4, 5]; <br>
+            arr2.splice(3, 0, 'a', 'b', 'c'); <br>
+            alert("arr2); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var arr2 = [1, 2, 3, 4, 5];
+            arr2.splice(3, 0, 'a', 'b', 'c');
+            alert("Задача #2: " + arr2);
+        </script>
+    </div>
+    
+    <div>
+        <h2>Задача #3</h2>
+        <h3>
+            С помощью метода splice сделайте из него массив:
+            <br>
+            [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']
+        </h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var arr3 = [1, 2, 3, 4, 5]; <br>
+            arr3.splice(1, 0, 'a', 'b');
+            arr3.splice(6, 0, 'c');
+            arr3.splice(8, 0, 'e'); <br>
+            alert("arr3); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var arr3 = [1, 2, 3, 4, 5];
+            arr3.splice(1, 0, 'a', 'b');
+            arr3.splice(6, 0, 'c');
+            arr3.splice(8, 0, 'e');
+            alert("Задача #3: " + arr3);
+        </script>
+    </div>
+    
+    
+    <div>
+        <h2>Задача #4</h2>
+        <h3>
+            Сделайте из этого массива следующий:
+            <br>
+            [1, 2, 3]
+        </h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var arr4 = [1, 2, 3, 4, 5]; <br>
+            arr4 = arr4.slice(0, 3); <br>
+            alert("arr4); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var arr4 = [1, 2, 3, 4, 5];
+            arr4 = arr4.slice(0, 3);
+            alert("Задача #4: " + arr4);
+        </script>
+    </div>
+    
+    <div>
+        <h2>Задача #5</h2>
+        <h3>
+            Сделайте из этого массива следующий:
+            <br>
+            [4, 5]
+        </h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var arr5 = [1, 2, 3, 4, 5]; <br>
+            var newArr = arr5.slice(3); <br>
+            alert("newArr); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var arr5 = [1, 2, 3, 4, 5];
+            var newArr = arr5.slice(3);
+            alert("Задача #5: " + newArr);
+        </script>
+    </div>
+
+    <div>
+        <a href="praktik9.1.html">ПРОДОЛЖЕНИЕ ЭТОЙ ЖЕ ПРАКТИКИ</a>
+    </div>
+
+    </body>
+</html>

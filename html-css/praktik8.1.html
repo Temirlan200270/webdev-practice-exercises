@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Практика 8</title>
+    </head>
+
+    <body>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="flex: 1;">Практика 8 по Веб технологиям.</h1>
+            <h2 style="flex: 1; text-align: right;"><a href="index.html">На главную страницу</a></h2>
+        </div>
+
+    <div style="color: darkblue;">
+        <h2>Работа со строками</h2>
+    </div>
+
+    <div>
+    <h2>Задача 1</h2>
+    <h3>Создайте переменную str и присвойте ей значение 'Привет, Мир!'. Выведите значение этой переменной на экран.</h3>
+    <h3>
+        Решение: <br>
+        &lt;script&gt; <br>
+        var str = 'Привет, Мир!'; <br>
+        alert(str); <br>
+        &lt;/script&gt;
+    </h3>
+    <script>
+        var str = 'Привет, Мир!';
+        alert("Задача #1: " + str);
+    </script>
+</div>
+
+<div>
+    <h2>Задача 2</h2>
+    <h3>Создайте переменные str1='Привет, ' и str2='Мир!'. С помощью этих переменных и операции сложения строк выведите на экран фразу 'Привет, Мир!'.</h3>
+    <h3>
+        Решение: <br>
+        &lt;script&gt; <br>
+        var str1 = 'Привет, '; <br>
+        var str2 = 'Мир!'; <br>
+        alert(str1 + str2); <br>
+        &lt;/script&gt;
+    </h3>
+    <script>
+        var str1 = 'Привет, ';
+        var str2 = 'Мир!';
+        alert("Задача #2: " + str1 + str2);
+    </script>
+</div>
+
+<div>
+    <h2>Задача 3</h2>
+    <h3>Создайте переменную name и присвойте ей ваше имя. Выведите на экран фразу 'Привет, %Имя%!'.</h3>
+    <h3>
+        Решение: <br>
+        &lt;script&gt; <br>
+        var name = 'Темирлан'; 
+        alert("Привет, " + name + "!"); <br>
+        &lt;/script&gt;
+    </h3>
+    <script>
+        var name = 'Темирлан';
+        alert("Задача #3: = Привет, " + name + "!");
+    </script>
+</div>
+
+<div>
+    <h2>Задача 4</h2>
+    <h3>Создайте переменную age и присвойте ей ваш возраст. Выведите на экран 'Мне %Возраст% лет!'.</h3>
+    <h3>
+        Решение: <br>
+        &lt;script&gt; <br>
+        var age = 21; 
+        alert("Мне " + age + " лет!"); <br>
+        &lt;/script&gt;
+    </h3>
+    <script>
+        var age = 21; 
+        alert("Задача #4: = Мне " + age + " год!");
+    </script>
+    </div>
+
+    <div style="color: darkblue;">
+        <h2>Функция prompt</h2>
+    </div>
+
+    <div>
+        <h2>Задача 5</h2>
+        <h3>Спросите имя пользователя с помощью метода prompt. Выведите с помощью alert сообщение 'Ваше имя %имя%'.</h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var userName = prompt("Введите ваше имя:"); <br>
+            alert("Ваше имя: " + userName); <br>
+            &lt;/script&gt;
+        </h3>
+        <script>
+            var userName = prompt("Введите ваше имя:");
+            alert("Задача #5: = Ваше имя: " + userName);
+        </script>
+    </div>
+    
+    <div>
+        <h2>Задача 6</h2>
+        <h3>Спросите у пользователя число. Выведите с помощью alert квадрат этого числа.</h3>
+        <h3>
+            Решение: <br>
+            &lt;script&gt; <br>
+            var userNumber = prompt("Введите число:"); <br>
+            var square = userNumber * userNumber; <br>
+            alert("Квадрат числа " + userNumber + " равен: " + square); <br>
+            &lt;/script&gt;
+            //Также можно возводить в степень с помощью ** (пример: 10 ** 2 = 100)
+        </h3>
+        <script>
+            var userNumber = prompt("Введите число:");
+            var square = userNumber * userNumber; //Также можно возводить в степень с помощью ** (пример: 10 ** 2 = 100)
+            alert("Задача 6: = Квадрат числа " + userNumber + " равен: " + square);
+        </script>
+    </div>
+    
+    <div>
+        <a href="praktik8.2.html">ПРОДОЛЖЕНИЕ ЭТОЙ ЖЕ ПРАКТИКИ</a>
+    </div>
+    </body>
+</html>

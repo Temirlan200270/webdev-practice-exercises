@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Практика 8</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 50px;
+        }
+
+        .result {
+          font-size: 1.5em;
+          margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1 style="flex: 1;">Практика 8 по Веб технологиям.</h1>
+        <h2 style="flex: 1; text-align: right;"><a href="index.html">На главную страницу</a></h2>
+    </div>
+
+    <div style="color: darkblue;">
+        <h2>Практика</h2>
+    </div>
+
+    <h1>Счетчик секунд #1</h1>
+
+    <button onclick="calculateSeconds('hour', 'result1')">Считать час</button>
+    <button onclick="calculateSeconds('day', 'result1')">Считать сутки</button>
+    <button onclick="calculateSeconds('month', 'result1')">Считать месяц</button>
+
+    <div class="result" id="result1"></div>
+
+    <script>
+        function calculateSeconds(unit, resultId) {
+            let seconds;
+
+            switch (unit) {
+                case 'hour':
+                    seconds = 60 * 60;
+                    break;
+                case 'day':
+                    seconds = 24 * 60 * 60;
+                    break;
+                case 'month':
+                    seconds = 30 * 24 * 60 * 60;
+                    break;
+                default:
+                    seconds = 0;
+            }
+
+            displayResult(seconds, unit, resultId);
+        }
+
+        function displayResult(seconds, unit, resultId) {
+            const resultElement = document.getElementById(resultId);
+            resultElement.textContent = `В одном ${unit} ${seconds} секунд.`;
+        }
+    </script>
+
+    <h1>Счетчик секунд #2</h1>
+
+    <form id="unitForm">
+        <label for="unit">Выберите единицу измерения:</label>
+        <select id="unit" name="unit">
+            <option value="hour">Час</option>
+            <option value="day">Сутки</option>
+            <option value="month">Месяц</option>
+        </select>
+        <button type="button" onclick="calculateSecondsForm()">Считать</button>
+    </form>
+
+    <div class="result" id="result2"></div>
+
+    <script>
+        function calculateSecondsForm() {
+            const unitSelect = document.getElementById('unit');
+            const unit = unitSelect.value;
+            let seconds;
+
+            switch (unit) {
+                case 'hour':
+                    seconds = 60 * 60;
+                    break;
+                case 'day':
+                    seconds = 24 * 60 * 60;
+                    break;
+                case 'month':
+                    seconds = 30 * 24 * 60 * 60;
+                    break;
+                default:
+                    seconds = 0;
+            }
+
+            displayResult(seconds, unit, 'result2');
+        }
+
+        function displayResult(seconds, unit, resultId) {
+            const resultElement = document.getElementById(resultId);
+            resultElement.textContent = `В ${unit} ${seconds} секунд.`;
+        }
+    </script>
+
+    <h1>Счетчик секунд #3</h1>
+
+    <form id="customForm">
+        <label for="months">Месяцы:</label>
+        <input type="number" id="months" name="months" min="0" step="1" required>
+
+        <label for="days">Сутки:</label>
+        <input type="number" id="days" name="days" min="0" step="1" required>
+
+        <label for="hours">Часы:</label>
+        <input type="number" id="hours" name="hours" min="0" step="1" required>
+
+        <button type="button" onclick="calculateCustomSeconds()">Считать</button>
+    </form>
+
+    <div class="result" id="result3"></div>
+
+    <script>
+        function calculateCustomSeconds() {
+            const monthsInput = document.getElementById('months');
+            const hoursInput = document.getElementById('hours');
+            const daysInput = document.getElementById('days');
+
+            const months = parseInt(monthsInput.value, 10) || 0;
+            const hours = parseInt(hoursInput.value, 10) || 0;
+            const days = parseInt(daysInput.value, 10) || 0;
+
+            const totalSeconds = (months * 30 * 24 * 60 * 60) + (days * 24 * 60 * 60) + (hours * 60 * 60);
+
+            displayResult(totalSeconds, 'пользовательском вводе', 'result3');
+        }
+    </script>
+</body>
+</html>

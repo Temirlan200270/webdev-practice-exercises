@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Практика 8</title>
+    </head>
+
+    <body>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="flex: 1;">Практика 8 по Веб технологиям.</h1>
+            <h2 style="flex: 1; text-align: right;"><a href="index.html">На главную страницу</a></h2>
+        </div>
+
+        <div style="color: darkblue;">
+            <h2>Обращение к символам строки</h2>
+        </div>
+
+        <div>
+            <h2>Задача 1</h2>
+            <h3>Создайте переменную str и присвойте ей значение 'abcde'. Обращаясь к отдельным символам этой строки выведите на экран символ 'a', символ 'c', символ 'e'.</h3>
+            <h3>
+                Решение: <br>
+                &lt;script&gt; <br>
+                var str = 'abcde'; <br>
+                alert("Символ 'a': " + str[0]); <br>
+                alert("Символ 'c': " + str[2]); <br>
+                alert("Символ 'e': " + str[4]); <br>
+                &lt;/script&gt;
+            </h3>
+            <script>
+                var str = 'abcde';
+                alert("Задача #1: Символ 'a': " + str[0]);
+                alert("Задача #1: Символ 'c': " + str[2]);
+                alert("Задача #1: Символ 'e': " + str[4]);
+            </script>
+        </div>
+
+        <div>
+            <h2>Задача 2</h2>
+            <h3>Создайте переменную num и присвойте ей значение '12345'. Найдите произведение (умножение) цифр этого числа.</h3>
+            <h3>
+                Решение: <br>
+                &lt;script&gt; <br>
+                var num = '12345'; <br>
+                var product = 1; <br>
+                for (var i = 0; i < num.length; i++) { <br>
+                    product *= parseInt(num[i]); <br>
+                } <br>
+                alert("Произведение цифр: " + product); <br>
+                &lt;/script&gt;
+            </h3>
+            <script>
+                var num = '12345';
+                var product = 1;
+                for (var i = 0; i < num.length; i++) {
+                    product *= parseInt(num[i]);
+                }
+                alert("Задача #2: Произведение цифр: " + product);
+            </script>
+        </div>
+    
+        <div style="color: darkblue;">
+            <h2>Практика</h2>
+        </div>
+
+        <div>
+            <h2>Задача 3</h2>
+            <h3>Считаем количество секунд в часе, в сутках, в месяце.</h3>
+            <h3>
+                Решение: <br>
+                &lt;script&gt; <br>
+                var secondsInHour = 60 * 60; <br>
+                var secondsInDay = secondsInHour * 24; <br>
+                var secondsInMonth = secondsInDay * 30; // предполагаем, что месяц состоит из 30 дней <br>
+                alert("Секунд в часе - " + secondsInHour + ", в сутках - " + secondsInDay + ", в месяце - " + secondsInMonth); <br>
+                &lt;/script&gt;
+            </h3>
+            <script>
+                var secondsInHour = 60 * 60;
+                var secondsInDay = secondsInHour * 24;
+                var secondsInMonth = secondsInDay * 30; // предполагаем, что месяц состоит из 30 дней
+                alert("Задача #3: Секунд в часе - " + secondsInHour + ", в сутках - " + secondsInDay + ", в месяце - " + secondsInMonth);
+            </script>
+        </div>
+        
+        <div>
+            <h2>Задача 4</h2>
+            <h3>Выводим текущее время в формате 'час:минута:секунда'.</h3>
+            <h3>
+                Решение: <br>
+                &lt;script&gt; <br>
+                var now = new Date(); <br>
+                var hour = now.getHours(); <br>
+                var minute = now.getMinutes(); <br>
+                var second = now.getSeconds(); <br>
+                alert("Текущее время - " + hour + ":" + minute + ":" + second); <br>
+                &lt;/script&gt;
+            </h3>
+            <script>
+                var now = new Date();
+                var hour = now.getHours();
+                var minute = now.getMinutes();
+                var second = now.getSeconds();
+                alert("Задача #4: Текущее время - " + hour + ":" + minute + ":" + second);
+            </script>
+        </div>
+        
+        <div>
+            <h2>Задача 5</h2>
+            <h3>Возводим число в квадрат.</h3>
+            <h3>
+                Решение: <br>
+                &lt;script&gt; <br>
+                var number = 5; <br>
+                var square = number ** 2; // возведение в квадрат <br>
+                alert("Квадрат числа " + number + " равен " + square); <br>
+                &lt;/script&gt;
+            </h3>
+            <script>
+                var number = 5; 
+                var square = number ** 2; 
+                alert("Задача #5: Квадрат числа " + number + " равен " + square);
+            </script>
+        </div>
+        
+        <div>
+            <a href="data.html">ПРОДОЛЖЕНИЕ ЭТОЙ ЖЕ ПРАКТИКИ</a>
+        </div>
+
+        <div style="color: darkblue;">
+            <h2>Работа с присваиванием и декрементами</h2>
+        </div>
+
+        <div>
+            <h2>Задача 6</h2>
+            <h3>Переделайте этот код так, чтобы в нем использовались операции +=, -=, *=, /=. Количество строк кода при этом не должно измениться.</h3>
+            <h3>
+                Задача <br>
+                var num = 47; <br>
+                num = num + 7; <br>
+                num = num - 18; <br>
+                num = num * 10; <br>
+                num = num / 15; <br>
+                alert(num); <br>
+            </h3>
+            <h3>
+                Решение: <br>
+                &lt;script&gt; <br>
+                var num = 47; <br>
+                num += 7; // увеличиваем на 7 <br>
+                num -= 18; // уменьшаем на 18 <br>
+                num *= 10; // умножаем на 10 <br>
+                num /= 15; // делим на 15 <br>
+                alert("Результат вычислений: " + num); <br>
+                &lt;/script&gt;
+            </h3>
+            <script>
+                var num = 47;
+                num += 7;
+                num -= 18;
+                num *= 10;
+                num /= 15;
+                alert("Задача #6: Результат вычислений: " + num);
+            </script>
+        </div>
+        
+        <div>
+            <h2>Задача 7</h2>
+            <h3>Переделайте этот код так, чтобы в нем использовались операции ++ и --. Количество строк кода при этом не должно измениться.</h3>
+            <h3>
+                Задача: <br>
+                var num = 10; <br>
+                num = num + 1; <br>
+                num = num + 1; <br>
+                num = num - 1; <br>
+                alert(num);
+            </h3>
+            <h3>
+                Решение: <br>
+                &lt;script&gt; <br>
+                var num = 10; <br>
+                num++; // увеличиваем на 1 <br>
+                num++; // увеличиваем на 1 <br>
+                num--; // уменьшаем на 1 <br>
+                alert("Результат вычислений: " + num); <br>
+                &lt;/script&gt;
+            </h3>
+            <script>
+                var num = 10;
+                num++;
+                num++;
+                num--;
+                alert("Задача #7: Результат вычислений: " + num);
+            </script>
+        </div>
+        
+        
+    </body>
+</html>
